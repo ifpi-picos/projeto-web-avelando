@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Shippori Mincho', serif;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* First Section */
+
+section {
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.first-section {
+    background-image: url('/imgs/demonslayer.png');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    border-bottom: #eeeeed 1px solid;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.hide-header {
+    top: -100%;
+}
+
+
+header img {
+    max-height: 100%;
+    margin: 0 0 0 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+header nav ul li a {
+    color: #eeeeed;
+    text-decoration: none;
+}
+
+.second-section {
+    background-image: url('/imgs/fundo2.png');
+    background-size: cover;
+}
+
+h2 {
+    color: #eeeeed;
+    padding: 20px;
+}
+
+/* Respirações */
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 20px;
+}
+
+.img {
+    height: 350px; 
+    width: 250px; 
+    margin: 50px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+}
+
+.img img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    height: 60px;
+    width: 98%;
+    transform: translate(-50%, -50%);
+    background-color: #863841;
+    color: #eeeeed;
+    text-align: center;
+    font-size: 1em; 
+    border: 2px solid #eeeeed; 
+    z-index: 10;
+}
