@@ -7,117 +7,63 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
     <section class="first-section">
         <header>
-            <img src="/imgs/logobranca.png" alt="Logo">
+            <img src="/img/logobranca.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="#">Respirações</a></li>
+                    <li><a href="#second-section">Respirações</a></li>
                     <li><a href="#">Hashiras</a></li>
-                    <li><a href="#">Luas</a></li>
+                    <li><a href="#">12 Kizuki</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
             </nav>
         </header>
     </section>
-    <section class="second-section">
+
+    <!-- Estrutura do Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+
+    <section class="second-section" id="respiration-section">
         <h2>Respirações</h2>
-        <div class="images">
-            <div class="img">
-                <img src="/imgs/hashiras/tanjiro.png" alt="Respiração do Sol">
-                <div class="title">
-                    <h3>Respiração do Sol</h3>
-                </div>
+        <div class="images" id="respirations-container">
+            
+        </div>
+    </section>
+
+    <section class="third-section">
+        <h2>Hashiras</h2>
+        <div class="images" id="hashiras-container">
+
+        </div>
+    </section>
+
+    <section class="fourth-section">
+        <h2>12 Kizuki</h2>
+        <div class="superiors">
+            <div class="images" id="superiors-container">
+
             </div>
-            <div class="img">
-                <img src="/imgs/hashiras/tomioka.png" alt="Respiração da Água">
-                <div class="title">
-                    <h3>Respiração da Água</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/zenitsu.png" alt="Respiração do Trovão">
-                <div class="title">
-                    <h3>Respiração do Trovão</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/muichiro.png" alt="Respiração da Névoa">
-                <div class="title">
-                    <h3>Respiração da Névoa</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/uzui.png" alt="Respiração do Som">
-                <div class="title">
-                    <h3>Respiração do Som</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/gyomei.png" alt="Respiração da Pedra">
-                <div class="title">
-                    <h3>Respiração da Pedra</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/mitsuri.png" alt="Respiração do Amor">
-                <div class="title">
-                    <h3>Respiração do Amor</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/kokushibo.png" alt="Respiração da Lua">
-                <div class="title">
-                    <h3>Respiração da Lua</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/shinobu.png" alt="Respiração do Inseto">
-                <div class="title">
-                    <h3>Respiração do Inseto</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/kanao.png" alt="Respiração da Flor">
-                <div class="title">
-                    <h3>Respiração da Flor</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/inosuke.png" alt="Respiração da Besta">
-                <div class="title">
-                    <h3>Respiração da Besta</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/regonku.png" alt="Respiração do Fogo">
-                <div class="title">
-                    <h3>Respiração do Fogo</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/obanai.png" alt="Respiração da Serpente">
-                <div class="title">
-                    <h3>Respiração da Serpente</h3>
-                </div>
-            </div>
-            <div class="img">
-                <img src="/imgs/hashiras/sanemi.png" alt="Respiração do Vento">
-                <div class="title">
-                    <h3>Respiração do Vento</h3>
-                </div>
+        </div>
+        <div class="lower">
+            <div class="images" id="lower-container">
+        
             </div>
         </div>
     </section>
-    <section class="third-section">
-        <h2>Hashiras</h2>
-    </section>
-    <section class="fourth-section">
-        <h2>Luas</h2>
-    </section>
+
     <section class="fifth-section">
         <h2>Sobre</h2>
     </section>
+
 </body>
 
 <script src="/js/script.js"></script>

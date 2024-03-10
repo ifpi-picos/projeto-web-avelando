@@ -1,0 +1,86 @@
+{
+    "superiors": {
+        "1": {
+            "title": "Gyutaro e Daki",
+            "image": "img/hashiras/daki.png",
+            "description": "Gyutaro e Daki são dois demônios que trabalham juntos. Gyutaro é um demônio que possui um corpo humano e uma cabeça de aranha, enquanto Daki é uma demônio que possui um corpo humano e uma cabeça de aranha. Eles são os antagonistas principais do Arco do Trem Infinito."
+        },
+        "2": {
+            "title": "Akaza",
+            "image": "img/hashiras/akaza.png",
+            "description": "Akaza é um dos Doze Kizuki, os doze demônios mais fortes e leais a Muzan Kibutsuji. Ele é o antagonista principal do Arco do Trem Infinito."
+        },
+        "3": {
+            "title": "Hatengu",
+            "image": "img/hashiras/hatengu.png",
+            "description": "Enmu é um dos Doze Kizuki, os doze demônios mais fortes e leais a Muzan Kibutsuji. Ele é o antagonista principal do Arco do Trem Infinito."
+        },
+        "4": {
+            "title": "Douma",
+            "image": "img/hashiras/douma.png",
+            "description": "Enmu é um dos Doze Kizuki, os doze demônios mais fortes e leais a Muzan Kibutsuji. Ele é o antagonista principal do Arco do Trem Infinito."
+        },
+        "5": {
+            "title": "Kokushibo",
+            "image": "img/hashiras/kokushibo.png",
+            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
+        },
+        "6": {
+            "title": "Nakime",
+            "image": "img/hashiras/nakime3.png",
+            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
+        },
+        "7": {
+            "title": "Kaigaku",
+            "image": "img/hashiras/kaigaku.png",
+            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
+        },
+        "8": {
+            "title": "Gyokko",
+            "image": "img/hashiras/gyokko.png",
+            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
+        },
+        "leader": {
+            "title": "Muzan Kibutsuji",
+            "image": "img/hashiras/muzan.png",
+            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
+        }
+    },
+    "lowers": {
+        "1": {
+            "title": "Rui",
+            "image": "img/hashiras/rui.png",
+            "description": "Rui é um demônio que possui um corpo humano e uma cabeça de aranha. Ele é o antagonista principal do Arco da Mansão da Borboleta."
+        },
+        "2": {
+            "title": "Enmu",
+            "image": "img/hashiras/enmu.png",
+            "description": "Enmu é um dos Doze Kizuki, os doze demônios mais fortes e leais a Muzan Kibutsuji. Ele é o antagonista principal do Arco do Trem Infinito."
+        },
+        "3": {
+            "title": "Kyogai",
+            "image": "img/hashiras/kyogai.png",
+            "description": "Kyogai é um demônio que possui um corpo humano e uma cabeça de tambor. Ele é o antagonista principal do Arco da Mansão da Borboleta."
+        },
+        "4": {
+            "title": "Kamanue",
+            "image": "img/hashiras/kamanue.png",
+            "description": "Susamaru é um demônio que possui um corpo humano e uma cabeça de tambor. Ela é a antagonista principal do Arco da Mansão da Borboleta."
+        },
+        "5": {
+            "title": "Mukago",
+            "image": "img/hashiras/mukago.png",
+            "description": "Yahaba é um demônio que possui um corpo humano e uma cabeça de bola de cristal. Ele é o antagonista principal do Arco da Mansão da Borboleta."
+        },
+        "6": {
+            "title": "Wakuraba",
+            "image": "img/hashiras/wakuraba.png",
+            "description": "Temari é um demônio que possui um corpo humano e uma cabeça de bola de cristal. Ela é a antagonista principal do Arco da Mansão da Borboleta."
+        },
+        "7": {
+            "title": "Rokuro",
+            "image": "img/hashiras/rokuro.png",
+            "description": "Hantengu é um demônio que possui um corpo humano e uma cabeça de bola de cristal. Ele é o antagonista principal do Arco da Mansão da Borboleta."
+        }
+    }
+}

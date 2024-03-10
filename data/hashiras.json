@@ -1,0 +1,54 @@
+{
+    "hashiras": [
+        {
+            "title": "Giyu Tomioka",
+            "image": "img/hashiras/tomioka.png",
+            "description": "Giyu Tomioka is a Demon Slayer and the Water Hashira of the Demon Slayer Corps. He is a stoic and serious"
+        },
+        {
+            "title": "Kyojuro Rengoku",
+            "image": "img/hashiras/regonku.png",
+            "description": "Kyojuro Rengoku is a Demon Slayer and the Flame Hashira of the Demon Slayer Corps. He is a very passionate and determined person."
+        },
+        {
+            "title": "Shinobu Kocho",
+            "image": "img/hashiras/shinobu.png",
+            "description": "Shinobu Kocho is a Demon Slayer and the Insect Hashira of the Demon Slayer Corps. She is a very kind and gentle person."
+        },
+        {
+            "title": "Mitsuri Kanroji",
+            "image": "img/hashiras/mitsuri.png",
+            "description": "Mitsuri Kanroji is a Demon Slayer and the Love Hashira of the Demon Slayer Corps. She is a very passionate and loving person."
+        },
+        {
+            "title": "Muichiro Tokito",
+            "image": "img/hashiras/muichiro.png",
+            "description": "Muichiro Tokito is a Demon Slayer and the Mist Hashira of the Demon Slayer Corps. He is a very quiet and reserved person."
+        },
+        {
+            "title": "Gyomei Himejima",
+            "image": "img/hashiras/gyomei.png",
+            "description": "Gyomei Himejima is a Demon Slayer and the Stone Hashira of the Demon Slayer Corps. He is a very strong and determined person."
+        },
+        {
+            "title": "Sanemi Shinazugawa",
+            "image": "img/hashiras/sanemi.png",
+            "description": "Sanemi Shinazugawa is a Demon Slayer and the Wind Hashira of the Demon Slayer Corps. He is a very serious and determined person."
+        },
+        {
+            "title": "Tengen Uzui",
+            "image": "img/hashiras/uzui.png",
+            "description": "Tengen Uzui is a Demon Slayer and the Sound Hashira of the Demon Slayer Corps. He is a very flamboyant and confident person."
+        },
+        {
+            "title": "Obanai Iguro",
+            "image": "img/hashiras/obanai.png",
+            "description": "Obanai Iguro is a Demon Slayer and the Serpent Hashira of the Demon Slayer Corps. He is a very serious and determined person."
+        },
+        {
+            "title": "Kagaya Ubuyashiki",
+            "image": "img/hashiras/kagaya.png",
+            "description": "Kagaya Ubuyashiki is the leader of the Demon Slayer Corps. He is a very wise and kind person."
+        }
+    ]
+}
