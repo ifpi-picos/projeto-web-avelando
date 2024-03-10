@@ -11,16 +11,27 @@ window.onclick = function(event) {
     }
 };
 
-document.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    var section2 = document.querySelector(".second-section").offsetTop;
-    var headerHeight = header.offsetHeight;
+// document.addEventListener("scroll", function() {
+//     var header = document.querySelector("header");
+//     var section2 = document.querySelector(".second-section").offsetTop;
+//     var headerHeight = header.offsetHeight;
 
-    if (window.pageYOffset >= section2 - headerHeight) {
-        header.classList.add("hide-header");
-    } else {
-        header.classList.remove("hide-header");
-    }
+//     if (window.pageYOffset >= section2 - headerHeight) {
+//         header.classList.add("hide-header");
+//     } else {
+//         header.classList.remove("hide-header");
+//     }
+// });
+
+document.addEventListener('scroll', () => {
+    let docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+    let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+    let scrolled = (scrollTop / docHeight) * 100;
+
+    document.getElementById('progress-bar').style.width = `${scrolled}%`;
+    document.getElementById('progress-img').style.left = `${scrolled}%`;
 });
 
 fetch('/data/breaths.json')
