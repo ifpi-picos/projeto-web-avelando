@@ -40,6 +40,13 @@ fetch('/data/breaths.json')
             image.alt = respiration.title;
             respirationDiv.appendChild(image);
 
+            image.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = respiration.title;
+                document.getElementById('modal-description').textContent = respiration.description;
+                modal.style.display = 'block';
+            });
+
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('title');
             const titleH3 = document.createElement('h3');
@@ -109,6 +116,13 @@ fetch('/data/kizuki.json')
             image.alt = superior.title;
             superiorsDiv.appendChild(image);
 
+            image.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = superior.title;
+                document.getElementById('modal-description').textContent = superior.description;
+                modal.style.display = 'block';
+            });
+
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('title');
             const titleH3 = document.createElement('h3');
@@ -138,6 +152,13 @@ fetch('/data/kizuki.json')
             image.src = lower.image;
             image.alt = lower.title;
             lowersDiv.appendChild(image);
+
+            image.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = lower.title;
+                document.getElementById('modal-description').textContent = lower.description;
+                modal.style.display = 'block';
+            });
 
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('title');
