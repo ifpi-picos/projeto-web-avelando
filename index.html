@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Demon Slaying">
     <title>Demon Slaying</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
     <section class="first-section" id="first-section">
@@ -14,9 +16,10 @@
             <nav>
                 <ul>
                     <li><a href="#respiration-section">Respirações</a></li>
-                    <li><a href="#">Hashiras</a></li>
-                    <li><a href="#">12 Kizuki</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#hashiras-section">Hashiras</a></li>
+                    <li><a href="#kizuki-section">12 Kizuki</a></li>
+                    <li><a href="#persons-section">Personagens</a></li>
+                    <li><a href="#info-section">Sobre</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,14 +39,14 @@
         </div>
     </section>
 
-    <section class="third-section">
+    <section class="third-section" id="hashiras-section">
         <h2>Hashiras</h2>
         <div class="images" id="hashiras-container">
 
         </div>
     </section>
 
-    <section class="fourth-section">
+    <section class="fourth-section" id="kizuki-section">
         <h2>12 Kizuki</h2>
         <div class="superiors">
             <div class="images" id="superiors-container">
@@ -57,8 +60,53 @@
         </div>
     </section>
 
-    <section class="fifth-section">
+    <section class="fifth-section" id="persons-section">
+        <h2>Personagens</h2>
+        <div id="carousel" class="carousel">
+            <div id="carousel-items" class="carousel-items"></div>
+        </div>
+        <div id="carousel-indicators"></div>
+        
+        <div id="person-description" class="person-description"></div>
+    </section>
+
+    <section class="sixth-section" id="info-section">
         <h2>Sobre</h2>
+        <p>
+            "Demon Slayer: Kimetsu no Yaiba" é uma série de mangá escrita e ilustrada por 
+            Koyoharu Gotouge. Foi serializada na revista Weekly Shōnen Jump de fevereiro de 
+            2016 a maio de 2020, com os capítulos coletados em 23 volumes tankōbon. A história 
+            gira em torno de Tanjiro Kamado, um jovem gentil e determinado que vende carvão para 
+            sustentar sua família. A trama começa quando ele retorna para casa um dia e encontra 
+            quase toda a sua família massacrada por um demônio. Sua irmã mais nova, Nezuko, é a 
+            única sobrevivente, mas ela foi transformada em um demônio. Tanjiro embarca em uma 
+            jornada perigosa para buscar uma cura para Nezuko e vingar sua família, tornando-se 
+            um caçador de demônios no processo.
+        </p>
+        <p>
+            O mangá foi adaptado para uma série de anime produzida pela Ufotable, que estreou em 
+            abril de 2019. A primeira temporada foi um sucesso estrondoso tanto de crítica quanto 
+            de audiência, elogiada por sua animação de alta qualidade, história emocionante e sequências 
+            de luta intensas. O anime também é conhecido por seu uso impressionante de efeitos e música, 
+            que complementam a narrativa emocionante e as cenas de batalha.
+        </p>
+        <p>
+            O filme "Demon Slayer: Mugen Train" foi lançado em outubro de 2020 e cobre o "Arco do Trem Infinito", 
+            atuando como uma ponte entre a primeira e a segunda temporada da série. O filme bateu vários recordes 
+            de bilheteria e se tornou um dos filmes de maior sucesso de todos os tempos no Japão e em todo o mundo.
+        </p>
+        <p>
+            A segunda temporada, lançada em 2021, seguiu o "Arco do Distrito do Entretenimento" e 
+            continuou o alto padrão de qualidade estabelecido pela primeira temporada e pelo filme, 
+            desenvolvendo ainda mais o mundo e os personagens da série.
+        </p>
+        <p>
+            "Demon Slayer" também gerou uma gama de mercadorias, desde jogos até novelas leves e 
+            uma variedade de produtos. A franquia continua a ser incrivelmente popular em todo o 
+            mundo, e sua influência na cultura pop e na comunidade de anime é imensa. A história 
+            é frequentemente elogiada por sua profundidade emocional, desenvolvimento de personagens, 
+            valores temáticos de perseverança e família, e por trazer uma nova vida ao gênero shōnen.
+        </p>
     </section>
 
     <div id="modal" class="modal">

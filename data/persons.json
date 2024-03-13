@@ -1,0 +1,39 @@
+{
+    "persons": {
+        "tanjiro": {
+            "title": "Tanjiro Kamado",
+            "image": "img/hashiras/tanjiro.png",
+            "description": "Tanjiro vira caçador de Oni com o objetivo de salvar a sua irmã, nezuko, que virou oni depois da família ter sido massacrada enquanto vendia carvão."
+        },
+        "nezuko": {
+            "title": "Nezuko Kamado",
+            "image": "img/hashiras/nezukoo.png",
+            "description": "Nezuko é a irmã mais nova de Tanjiro. Ela foi transformada em um demônio por Muzan Kibutsuji. Ela é uma das personagens principais de Kimetsu no Yaiba."
+        },
+        "inosuke": {
+            "title": "Inosuke",
+            "image": "img/hashiras/inosuke.png",
+            "description": "Inosuke usa a cabeça de javali para mascarar."
+        },
+        "zenitsu": {
+            "title": "Zenitsu",
+            "image": "img/hashiras/zenitsu.png",
+            "description": "Zenitsu é o personagem que usa a respiração do trovão. Ele só sabe usar uma forma da respiração e só consegue usá-la dormindo."
+        },
+        "muzan": {
+            "title": "Muzan Kibutsuji",
+            "image": "img/hashiras/muzan.png",
+            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
+        },
+        "kagaya": {
+            "title": "Kagaya Ubuyashiki",
+            "image": "img/hashiras/kagaya.png",
+            "description": "Kagaya Ubuyashiki is the leader of the Demon Slayer Corps. He is a very wise and kind person."
+        },
+        "ferreiro": {
+            "title": "Sakonji Urokodaki",
+            "image": "img/hashiras/sakonji.png",
+            "description": "É o caçador que treina o tanjiro e a nezuko para virarem caçadores."
+        }
+    }
+}

@@ -11,7 +11,6 @@ body {
     height: 100%;
     font-family: 'Shippori Mincho', serif;
     overflow-x: hidden;
-    background-color: black;
     overflow-y: scroll;
 }
 
@@ -60,11 +59,10 @@ section {
 header {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: #4b2d2d;
     width: 100%;
     height: 40px;
     padding: 35px;
-    border-bottom: #eeeeed 1px solid;
     position: fixed;
     top: 0;
     transition: top 0.3s;
@@ -108,6 +106,10 @@ header nav ul li a:hover::after {
     width: 100%; 
 }
 
+header nav ul li a.active::after {
+    width: 100%;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -119,23 +121,50 @@ header nav ul li a:hover::after {
 }
 
 .content .logo img {
+    max-width: 100%;
+    height: auto;
     filter: drop-shadow(0 0 5px #eeeeed);
 }
 
 /* Second Section - Respirações */
 
 .second-section {
-    background-color: #000;
+    padding-top: 30px;
+    background-image: url('/img/background.png');
+    background-size: cover;
 }
 
 .third-section {
-    background-color: #201414;
+    background-image: url('/img/background-3.jpg');
+    padding-top: 30px;
+    background-size: cover;
+}
+
+.fourth-section {
+    background-image: url('/img/background-kizuki.png');
+    background-size: cover;
+    padding-top: 30px;
+    background-color: #22201f;
+}
+
+.fifth-section {
+    padding-top: 30px;
+    background-image: url('/img/background.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #22201f;
+}
+
+.sixth-section {
+    padding-top: 30px;
+    background-color: #22201f;
 }
 
 h2 {
+    text-align: center;
     color: #eeeeed;
-    padding: 20px;
-}
+    font-size: 2em;
+} 
 
 .images {
     display: flex;
@@ -228,4 +257,92 @@ h2 {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    filter: drop-shadow(0 0 5px #eeeeed);
+    border-bottom: #46b077 1px solid;
+    align-items: center;
+    width: 100vw;
+    height: 400px;
+}
+
+.carousel-items {
+    display: flex;
+    align-items: center;
+    will-change: transform;
+    transition: transform 0.5s ease;
+}
+
+.carousel-img {
+    box-sizing: border-box;
+    margin: 0 3%;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.carousel-img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.carousel-img.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.person-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2%;
+    color: #eeeeed;
+}
+
+.person-description .name h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.person-description p {
+    margin: 0 auto;
+    font-size: 16px;
+    width: 60%;
+    color: #eeeeed;
+
+}
+
+#carousel-indicators {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #eeeeed;
+    margin: 0 0.2%;
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background-color: #eeeeed;
 }

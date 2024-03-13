@@ -39,11 +39,6 @@
             "title": "Gyokko",
             "image": "img/hashiras/gyokko.png",
             "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
-        },
-        "leader": {
-            "title": "Muzan Kibutsuji",
-            "image": "img/hashiras/muzan.png",
-            "description": "Muzan Kibutsuji é o principal antagonista de Kimetsu no Yaiba. Ele é o primeiro demônio e o criador de todos os outros demônios. Ele é o responsável pela transformação de Tanjiro Kamado em um demônio e pela morte da família de Tanjiro."
         }
     },
     "lowers": {
