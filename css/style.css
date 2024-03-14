@@ -51,7 +51,7 @@ section {
 }
 
 .first-section {
-    background-image: url('img/demonslayer.png');
+    background-image: url('/img/demonslayer.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -130,18 +130,18 @@ header nav ul li a.active::after {
 
 .second-section {
     padding-top: 30px;
-    background-image: url('img/background.png');
+    background-image: url('/img/background.png');
     background-size: cover;
 }
 
 .third-section {
-    background-image: url('img/background-3.jpg');
+    background-image: url('/img/background-3.jpg');
     padding-top: 30px;
     background-size: cover;
 }
 
 .fourth-section {
-    background-image: url('img/background-kizuki.png');
+    background-image: url('/img/background-kizuki.png');
     background-size: cover;
     padding-top: 30px;
     background-color: #22201f;
@@ -149,7 +149,7 @@ header nav ul li a.active::after {
 
 .fifth-section {
     padding-top: 30px;
-    background-image: url('img/background.jpg');
+    background-image: url('/img/background.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-color: #22201f;
