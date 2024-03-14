@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
 section {
     min-height: 100vh;
     min-width: 100%;
+    position: relative;
 }
 
 .first-section {
@@ -109,7 +110,7 @@ header nav ul li a:hover::after {
 header nav ul li a.active::after {
     width: 100%;
 }
-
+  
 .content {
     display: flex;
     justify-content: space-between;
@@ -148,7 +149,7 @@ header nav ul li a.active::after {
 }
 
 .fifth-section {
-    padding: 0.5% 0 0 0;
+    padding: 0.5% 0 13% 0;
     background-image: url('/img/background.jpg');
     background-blend-mode: multiply;
     background-size: cover;
@@ -196,6 +197,38 @@ h3 {
 hr {
     width: 50%;
     margin: 1% auto;
+}
+
+footer {
+    background-color: #000000;
+    padding: 1% 0 1% 0;
+    width: 100%;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h3 {
+    color: white; 
+    margin: 1% 0 1% 0; 
+    padding: 0;
+    text-align: center; 
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer .icons a {
+    margin: 0.3% 0 0 1%;
+}
+
+footer .icons img {
+    height: 40px; 
+    width: 40px; 
+    filter: invert(100%);
 }
 
 .images {
@@ -465,22 +498,21 @@ hr {
     background-color: rgba(0,0,0,0.4);
 }
 
-/* Centraliza o modal content e define o tamanho para ser o tamanho natural do vídeo */
 .modal-content-trailer {
     position: relative;
     background-color: #fefefe;
-    margin: 10% auto; /* Aumente a porcentagem para elevar o modal na tela se necessário */
+    margin: 10% auto;
     padding: 0;
     border: 1px solid #888;
-    width: 560px; /* Largura do vídeo */
-    height: 315px; /* Altura do vídeo */
+    width: 560px;
+    height: 315px;
 }
 
 iframe {
-    display: block; /* Remove any default margin or padding */
-    width: 100%; /* Full width of modal-content */
-    height: 100%; /* Full height of modal-content */
-    border: none; /* Remove any border */
+    display: block;
+    width: 100%; 
+    height: 100%;
+    border: none;
 }
 
 .close-modal {

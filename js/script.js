@@ -11,29 +11,6 @@ window.onclick = function(event) {
     }
 };
 
-var modaltrailer = document.getElementById('trailerModal');
-var btn = document.getElementById("btn-trailer");
-var span = document.getElementsByClassName("close-modal")[0];
-var iframe = document.querySelector('.modal-content-trailer iframe');
-var iframeSrc = iframe.src; 
-
-btn.onclick = function() {
-    iframe.src = iframeSrc + "?autoplay=1";
-    modaltrailer.style.display = "block";
-}
-
-span.onclick = function() {
-    iframe.src = "";
-    modaltrailer.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modaltrailer) {
-        iframe.src = "";
-        modaltrailer.style.display = "none";
-    }
-}
-
 document.addEventListener('scroll', () => {
     let docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 

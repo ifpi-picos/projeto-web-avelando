@@ -10,87 +10,86 @@
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
-    <section class="first-section" id="first-section">
-        <header>
-            <img src="img/logobranca.png" alt="Logo">
-            <nav>
-                <ul>
-                    <li><a href="#respiration-section">Respirações</a></li>
-                    <li><a href="#hashiras-section">Hashiras</a></li>
-                    <li><a href="#kizuki-section">12 Kizuki</a></li>
-                    <li><a href="#persons-section">Personagens</a></li>
-                </ul>
-            </nav>
-            <div class="hamburguer-menu">
-                <div class="hamburguer-icon"></div>
+    <main>
+        <section class="first-section" id="first-section">
+            <header>
+                <img src="img/logobranca.png" alt="Logo">
+                <nav>
+                    <ul>
+                        <li><a href="#respiration-section">Respirações</a></li>
+                        <li><a href="#hashiras-section">Hashiras</a></li>
+                        <li><a href="#kizuki-section">12 Kizuki</a></li>
+                        <li><a href="#persons-section">Personagens</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <div class="content">
+                <div class="logo">
+                    <img src="img/logo2.png" alt="">
+                </div>
             </div>
-        </header>
-
-        <div class="content">
-            <div class="logo">
-                <img src="img/logo2.png" alt="">
+    
+        </section>
+    
+        <section class="second-section" id="respiration-section">
+            <h2>Respirações</h2>
+            <div class="icons" id="respirations-container">
+                
             </div>
-        </div>
-
-        <button id="btn-trailer"><svg src="img/play.svg"></svg></button>
-
-        <div id="trailerModal" class="modal-trailer">
-            <span class="close-modal">&times;</span>
-
-            <div class="modal-content-trailer">
-                <iframe src="https://www.youtube.com/embed/VQGCKyvzIM4?autoplay=1&mute=0&controls=0&showinfo=0" allowfullscreen></iframe>
+        </section>
+    
+        <section class="third-section" id="hashiras-section">
+            <h2>Hashiras</h2>
+            <div class="images" id="hashiras-container">
+    
             </div>
-        </div>
-
-    </section>
-
-    <section class="second-section" id="respiration-section">
-        <h2>Respirações</h2>
-        <div class="icons" id="respirations-container">
+        </section>
+    
+        <section class="fourth-section" id="kizuki-section">
+            <h2>12 Kizuki</h2>
+            <hr>
+            <h3>Superiores</h3>
+            <hr>
+            <div class="superiors">
+                <div class="images" id="superiors-container">
+    
+                </div>
+            </div>
+            <hr>
+            <h3>Inferiores</h3>
+            <hr>
+            <div class="lower">
+                <div class="images" id="lower-container">
             
-        </div>
-    </section>
-
-    <section class="third-section" id="hashiras-section">
-        <h2>Hashiras</h2>
-        <div class="images" id="hashiras-container">
-
-        </div>
-    </section>
-
-    <section class="fourth-section" id="kizuki-section">
-        <h2>12 Kizuki</h2>
-        <hr>
-        <h3>Superiores</h3>
-        <hr>
-        <div class="superiors">
-            <div class="images" id="superiors-container">
-
+                </div>
             </div>
-        </div>
-        <hr>
-        <h3>Inferiores</h3>
-        <hr>
-        <div class="lower">
-            <div class="images" id="lower-container">
-        
+        </section>
+    
+        <section class="fifth-section" id="persons-section">
+            <h2>Personagens</h2>
+            <div id="carousel" class="carousel">
+                <div id="carousel-items" class="carousel-items"></div>
             </div>
-        </div>
-    </section>
-
-    <section class="fifth-section" id="persons-section">
-        <h2>Personagens</h2>
-        <div id="carousel" class="carousel">
-            <div id="carousel-items" class="carousel-items"></div>
-        </div>
-        <div id="carousel-indicators"></div>
-        
-        <div id="person-description" class="person-description"></div>
-
-        <footer>
-        </footer>
-    </section>
-
+            <div id="carousel-indicators"></div>
+            
+            <div id="person-description" class="person-description"></div>
+    
+            <footer>
+                <h3>By @avelando</h3>
+                <div class="icons">
+                    <a href="https://github.com/avelando">
+                        <img src="img/footer/github.svg" alt="github">
+                    </a>
+    
+                    <a href="https://www.instagram.com/avelando/">
+                        <img src="img/footer/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </main>
+    
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
