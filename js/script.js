@@ -26,40 +26,36 @@ fetch('/data/breaths.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('respirations-container');
-
         container.innerHTML = '';
 
         data.respirations.forEach(respiration => {
-            fetch(respiration.image)
-                .then(response => response.text())
-                .then(svg => {
-                    const respirationDiv = document.createElement('div');
-                    respirationDiv.classList.add('icon');
+        const respirationDiv = document.createElement('div');
+        respirationDiv.classList.add('icon');
 
-                    respirationDiv.innerHTML = svg;
+        fetch(respiration.image)
+            .then(response => response.text())
+            .then(svg => {
+            respirationDiv.innerHTML = svg; 
 
-                    const svgElement = respirationDiv.querySelector('svg');
-                    if (svgElement) {
-                        svgElement.addEventListener('click', () => {
-                            const modal = document.getElementById('modal');
-                            document.getElementById('modal-title').textContent = respiration.title;
-                            document.getElementById('modal-description').textContent = respiration.description;
-                            modal.style.display = 'block';
-                        });
-                    }
+            const titleDiv = document.createElement('div');
+            titleDiv.classList.add('title');
+            const titleH3 = document.createElement('h3');
+            titleH3.textContent = respiration.title;
+            titleDiv.appendChild(titleH3);
+            respirationDiv.appendChild(titleDiv);
 
-                    const titleDiv = document.createElement('div');
-                    titleDiv.classList.add('title');
-                    const titleH3 = document.createElement('h3');
-                    titleH3.textContent = respiration.title;
-                    titleDiv.appendChild(titleH3);
-                    respirationDiv.appendChild(titleDiv);
+            respirationDiv.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = respiration.title;
+                document.getElementById('modal-description').textContent = respiration.description;
+                modal.style.display = 'block';
+            });
 
-                    container.appendChild(respirationDiv);
-                })
-                .catch(error => {
-                    console.error('Erro ao carregar o SVG:', error);
-                });
+            container.appendChild(respirationDiv);
+            })
+            .catch(error => {
+            console.error('Erro ao carregar o SVG:', error);
+            });
         });
     })
     .catch(error => {
@@ -70,11 +66,9 @@ fetch('/data/hashiras.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('hashiras-container');
-
-        container.innerHTML = '';
+        container.innerHTML = ''; 
 
         data.hashiras.forEach(hashira => {
-
             const hashiraDiv = document.createElement('div');
             hashiraDiv.classList.add('img');
 
@@ -83,19 +77,19 @@ fetch('/data/hashiras.json')
             image.alt = hashira.title;
             hashiraDiv.appendChild(image);
 
-            image.addEventListener('click', () => {
-                const modal = document.getElementById('modal');
-                document.getElementById('modal-title').textContent = hashira.title;
-                document.getElementById('modal-description').textContent = hashira.description;
-                modal.style.display = 'block';
-            });
-
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('title');
             const titleH3 = document.createElement('h3');
             titleH3.textContent = hashira.title;
             titleDiv.appendChild(titleH3);
             hashiraDiv.appendChild(titleDiv);
+
+            hashiraDiv.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = hashira.title;
+                document.getElementById('modal-description').textContent = hashira.description;
+                modal.style.display = 'block';
+            });
 
             container.appendChild(hashiraDiv);
         });
@@ -134,6 +128,13 @@ fetch('/data/kizuki.json')
             titleDiv.appendChild(titleH3);
             superiorsDiv.appendChild(titleDiv);
 
+            superiorsDiv.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = superior.title;
+                document.getElementById('modal-description').textContent = superior.description;
+                modal.style.display = 'block';
+            });
+
             container.appendChild(superiorsDiv);
         });
     })
@@ -170,6 +171,13 @@ fetch('/data/kizuki.json')
             titleH3.textContent = lower.title;
             titleDiv.appendChild(titleH3);
             lowersDiv.appendChild(titleDiv);
+
+            lowersDiv.addEventListener('click', () => {
+                const modal = document.getElementById('modal');
+                document.getElementById('modal-title').textContent = lower.title;
+                document.getElementById('modal-description').textContent = lower.description;
+                modal.style.display = 'block';
+            });
 
             container.appendChild(lowersDiv);
         });
@@ -284,7 +292,7 @@ window.onload = function() {
                 };
                 carousel.appendChild(img);
             });
-
+            
             function setActive(index) {
                 activeIndex = index;
                 const activeImg = carousel.children[activeIndex];
@@ -294,6 +302,24 @@ window.onload = function() {
                 updateActiveImage();
                 setActiveIndicator(index);
             }
+            
+            function checkImagesLoaded() {
+                const images = carousel.getElementsByTagName('img');
+                let loaded = true;
+            
+                for (let img of images) {
+                    if (!img.complete) {
+                        loaded = false;
+                        break;
+                    }
+                }
+            
+                if (loaded) {
+                    setActive(0);
+                } else {
+                    setTimeout(checkImagesLoaded, 100);
+                }
+            };
 
             function updateActiveImage() {
                 Array.from(carousel.children).forEach((img, index) => {
@@ -322,21 +348,14 @@ window.onload = function() {
                         img.classList.remove('active');
                     }
                 });
-            }            
+            }
+            checkImagesLoaded();
             setActive(0);
         })
+        
+        
         .catch(error => {
             console.error('Error loading the JSON file:', error);
             description.innerHTML = "<p>Error loading the character data.</p>";
         });
     };
-
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburguerMenu = document.querySelector('.hamburguer-menu');
-    const headerNav = document.querySelector('header nav');
-
-    hamburguerMenu.addEventListener('click', function () {
-        headerNav.classList.toggle('show-menu');
-    });
-});
-    
