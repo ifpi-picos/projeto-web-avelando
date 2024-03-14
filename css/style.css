@@ -51,7 +51,7 @@ section {
 }
 
 .first-section {
-    background-image: url('/img/demonslayer.png');
+    background-image: url('img/demonslayer.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -130,18 +130,18 @@ header nav ul li a.active::after {
 
 .second-section {
     padding-top: 30px;
-    background-image: url('/img/background.png');
+    background-image: url('img/background.png');
     background-size: cover;
 }
 
 .third-section {
-    background-image: url('/img/background-3.jpg');
+    background-image: url('img/background-3.jpg');
     padding-top: 30px;
     background-size: cover;
 }
 
 .fourth-section {
-    background-image: url('/img/background-kizuki.png');
+    background-image: url('img/background-kizuki.png');
     background-size: cover;
     padding-top: 30px;
     background-color: #22201f;
@@ -149,7 +149,7 @@ header nav ul li a.active::after {
 
 .fifth-section {
     padding-top: 30px;
-    background-image: url('/img/background.jpg');
+    background-image: url('img/background.jpg');
     background-blend-mode: multiply;
     background-size: cover;
     background-color: #22201f;
@@ -158,6 +158,31 @@ header nav ul li a.active::after {
 .sixth-section {
     padding-top: 30px;
     background-color: #22201f;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    color: #eeeeed;
+}
+
+.info img {
+    max-width: 400px;
+    height: auto;
+}
+
+.info p, .info img {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.info p {
+    margin: 1% auto;
+    text-align: justify;
+    color: #eeeeed;
+    font-size: 1em;
 }
 
 h2 {
@@ -170,7 +195,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 20px 0;
     filter: drop-shadow(0 0 5px #eeeeed);
 }
 
@@ -179,7 +204,7 @@ h2 {
 } 
 
 .img {
-    height: 350px; 
+    height: 270px; 
     width: 330px; 
     margin: 50px 0px 50px 0px;
     overflow: hidden;
@@ -188,6 +213,58 @@ h2 {
     align-items: center;
     filter: grayscale(100%); 
     transition: filter 0.3s ease;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 0;
+}
+
+.icon {
+    height: 200px; 
+    width: 330px; 
+    margin: -2% 0 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.icon svg {
+    margin: 0 0 5% 0;
+    height: 30%;
+    width: auto;
+    object-fit: contain;
+    fill: #000000;
+    transition: fill 0.3s ease;
+    filter: drop-shadow(0 0 5px #eeeeed);
+}
+
+.title {
+    color: #000000; 
+    transition: color 0.3s ease; 
+    filter: drop-shadow(0 0 5px #eeeeed);
+}
+
+.icon:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.icon:hover svg {
+    filter: drop-shadow(0 0 0);
+    height: 40%;
+    transition: 0.5s ease-in-out;
+    fill: #eeeeed;
+}
+
+.icon:hover .title {
+    color: #eeeeed;
 }
 
 .img img {
@@ -231,18 +308,25 @@ h2 {
 }
 
 .modal-content {
-    background-color: #eeeeed;
+    background-color: #863841;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
+    height: 45%;
+}
+
+.modal-content p {
+    text-align: justify;
+    font-size: 1.2em;
+    color: #eeeeed;
 }
 
 #modal-title {
     text-align: center;
     font-size: 2em;
     margin: 20px 0 20px 0;
-    color: black;
+    color: #eeeeed;
 }
 
 .close {
@@ -345,4 +429,89 @@ h2 {
 
 .carousel-indicator.active {
     background-color: #eeeeed;
+}
+
+.hamburguer-menu {
+    display: none;
+    position: fixed;
+    top: 50%; /* Centraliza verticalmente */
+    right: 10px; /* 10px da borda direita */
+    z-index: 105;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.hamburguer-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #eeeeed;
+    position: relative;
+}
+
+.hamburguer-icon:before,
+.hamburguer-icon:after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #eeeeed;
+    position: absolute;
+    left: 0;
+}
+
+.hamburguer-icon:before {
+    top: -10px;
+}
+
+.hamburguer-icon:after {
+    top: 10px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background-color: #4b2d2d;
+        padding: 0;
+    }
+
+    header nav.show-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburguer-menu {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 105;
+        cursor: pointer;
+    }
+
+    .first-section {
+        background-image: url('/img/background-phone.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
+        height: 100vh;
+        width: 100%;
+        background-color: #22201f;
+    }
 }

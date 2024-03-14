@@ -2,72 +2,72 @@
     "respirations": [
         {
             "title": "Respiração do Sol",
-            "image": "img/hashiras/tanjiro.png",
+            "image": "img/icons/sun.svg",
             "description": "A Respiração do Sol é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Lua",
-            "image": "img/hashiras/kokushibo.png",
+            "image": "img/icons/moon.svg",
             "description": "A Respiração da Lua é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração do Fogo",
-            "image": "img/hashiras/regonku.png",
+            "image": "img/icons/fire.svg",
             "description": "A Respiração do Fogo é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Água",
-            "image": "img/hashiras/tomioka.png",
+            "image": "img/icons/water.svg",
             "description": "A Respiração da Água é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Flor",
-            "image": "img/hashiras/kanao.png",
+            "image": "img/icons/flower.svg",
             "description": "A Respiração da Flor é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração do Inseto",
-            "image": "img/hashiras/shinobu.png",
+            "image": "img/icons/butterfly.svg",
             "description": "A Respiração do Inseto é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Pedra",
-            "image": "img/hashiras/gyomei.png",
+            "image": "img/icons/rock.svg",
             "description": "A Respiração da Pedra é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração do Vento",
-            "image": "img/hashiras/sanemi.png",
+            "image": "img/icons/wind.svg",
             "description": "A Respiração do Vento é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Névoa",
-            "image": "img/hashiras/muichiro.png",
+            "image": "img/icons/mist.svg",
             "description": "A Respiração da Névoa é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Serpente",
-            "image": "img/hashiras/obanai.png",
+            "image": "img/icons/snake.svg",
             "description": "A Respiração da Serpente é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração do Amor",
-            "image": "img/hashiras/mitsuri.png",
+            "image": "img/icons/love.svg",
             "description": "A Respiração do Amor é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração do Trovão",
-            "image": "img/hashiras/zenitsu.png",
+            "image": "img/icons/ray.svg",
             "description": "A Respiração do Trovão é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração da Besta",
-            "image": "img/hashiras/inosuke.png",
+            "image": "img/icons/pig.svg",
             "description": "A Respiração da Besta é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente quentes e brilhantes, capazes de queimar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         },
         {
             "title": "Respiração do Som",
-            "image": "img/hashiras/uzui.png",
+            "image": "img/icons/sound.svg",
             "description": "A Respiração do Som é uma das mais poderosas respirações, ela é capaz de criar chamas extremamente frias e brilhantes, capazes de congelar qualquer coisa que toque. Ela é uma das respirações mais difíceis de se aprender, e é uma das mais raras."
         }
     ]

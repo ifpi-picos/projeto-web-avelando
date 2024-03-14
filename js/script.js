@@ -30,33 +30,38 @@ fetch('/data/breaths.json')
         container.innerHTML = '';
 
         data.respirations.forEach(respiration => {
+            fetch(respiration.image)
+                .then(response => response.text())
+                .then(svg => {
+                    const respirationDiv = document.createElement('div');
+                    respirationDiv.classList.add('icon');
 
-            const respirationDiv = document.createElement('div');
-            respirationDiv.classList.add('img');
+                    respirationDiv.innerHTML = svg;
 
-            const image = document.createElement('img');
-            image.src = respiration.image;
-            image.alt = respiration.title;
-            respirationDiv.appendChild(image);
+                    const svgElement = respirationDiv.querySelector('svg');
+                    if (svgElement) {
+                        svgElement.addEventListener('click', () => {
+                            const modal = document.getElementById('modal');
+                            document.getElementById('modal-title').textContent = respiration.title;
+                            document.getElementById('modal-description').textContent = respiration.description;
+                            modal.style.display = 'block';
+                        });
+                    }
 
-            image.addEventListener('click', () => {
-                const modal = document.getElementById('modal');
-                document.getElementById('modal-title').textContent = respiration.title;
-                document.getElementById('modal-description').textContent = respiration.description;
-                modal.style.display = 'block';
-            });
+                    const titleDiv = document.createElement('div');
+                    titleDiv.classList.add('title');
+                    const titleH3 = document.createElement('h3');
+                    titleH3.textContent = respiration.title;
+                    titleDiv.appendChild(titleH3);
+                    respirationDiv.appendChild(titleDiv);
 
-            const titleDiv = document.createElement('div');
-            titleDiv.classList.add('title');
-            const titleH3 = document.createElement('h3');
-            titleH3.textContent = respiration.title;
-            titleDiv.appendChild(titleH3);
-            respirationDiv.appendChild(titleDiv);
-
-            container.appendChild(respirationDiv);
+                    container.appendChild(respirationDiv);
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar o SVG:', error);
+                });
         });
     })
-
     .catch(error => {
         console.error('Erro ao carregar os dados das respirações:', error);
     });
@@ -240,7 +245,7 @@ window.onload = function() {
         for (let i = 0; i < num; i++) {
             const indicator = document.createElement('div');
             indicator.classList.add('carousel-indicator');
-            if (i === 0) { // Primeiro indicador ativo por padrão
+            if (i === 0) {
                 indicator.classList.add('active');
             }
             indicator.onclick = () => {
@@ -318,7 +323,6 @@ window.onload = function() {
                     }
                 });
             }            
-
             setActive(0);
         })
         .catch(error => {
@@ -326,3 +330,13 @@ window.onload = function() {
             description.innerHTML = "<p>Error loading the character data.</p>";
         });
     };
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburguerMenu = document.querySelector('.hamburguer-menu');
+    const headerNav = document.querySelector('header nav');
+
+    hamburguerMenu.addEventListener('click', function () {
+        headerNav.classList.toggle('show-menu');
+    });
+});
+    
