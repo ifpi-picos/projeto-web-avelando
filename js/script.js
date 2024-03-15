@@ -49,6 +49,8 @@ fetch('/data/breaths.json')
                 document.getElementById('modal-title').textContent = respiration.title;
                 document.getElementById('modal-description').textContent = respiration.description;
                 modal.style.display = 'block';
+
+                adjustModalSize();
             });
 
             container.appendChild(respirationDiv);
@@ -62,16 +64,17 @@ fetch('/data/breaths.json')
         console.error('Erro ao carregar os dados das respirações:', error);
     });
 
+    
 fetch('/data/hashiras.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('hashiras-container');
         container.innerHTML = ''; 
-
+        
         data.hashiras.forEach(hashira => {
             const hashiraDiv = document.createElement('div');
             hashiraDiv.classList.add('img');
-
+            
             const bgDiv = document.createElement('div');
             bgDiv.classList.add('hashira-bg');
             bgDiv.style.background = `linear-gradient(to bottom, ${hashira.backgroundColor} 0%, #eeeeed 100%)`;
@@ -79,26 +82,26 @@ fetch('/data/hashiras.json')
             const image = document.createElement('img');
             image.src = hashira.image;
             image.alt = hashira.title;
-
+            
             bgDiv.appendChild(image);
 
             hashiraDiv.appendChild(bgDiv);
-
+            
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('title');
             const titleH3 = document.createElement('h3');
             titleH3.textContent = hashira.title;
             titleDiv.appendChild(titleH3);
-
+            
             hashiraDiv.appendChild(titleDiv);
-
+            
             hashiraDiv.addEventListener('click', () => {
                 const modal = document.getElementById('modal');
                 document.getElementById('modal-title').textContent = hashira.title;
                 document.getElementById('modal-description').textContent = hashira.description;
                 modal.style.display = 'block';
             });
-
+            
             container.appendChild(hashiraDiv);
         });
     })
@@ -110,18 +113,18 @@ fetch('/data/kizuki.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('superiors-container');
-
+        
         container.innerHTML = '';
-
+        
         Object.values(data.superiors).forEach(superior => {
             const superiorsDiv = document.createElement('div');
             superiorsDiv.classList.add('img');
-
+            
             const image = document.createElement('img');
             image.src = superior.image;
             image.alt = superior.title;
             superiorsDiv.appendChild(image);
-
+            
             image.addEventListener('click', () => {
                 const modal = document.getElementById('modal');
                 document.getElementById('modal-title').textContent = superior.title;
@@ -135,7 +138,7 @@ fetch('/data/kizuki.json')
             titleH3.textContent = superior.title;
             titleDiv.appendChild(titleH3);
             superiorsDiv.appendChild(titleDiv);
-
+            
             superiorsDiv.addEventListener('click', () => {
                 const modal = document.getElementById('modal');
                 document.getElementById('modal-title').textContent = superior.title;
@@ -154,32 +157,32 @@ fetch('/data/kizuki.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('lower-container');
-
+        
         container.innerHTML = '';
 
         Object.values(data.lowers).forEach(lower => {
             const lowersDiv = document.createElement('div');
             lowersDiv.classList.add('img');
-
+            
             const image = document.createElement('img');
             image.src = lower.image;
             image.alt = lower.title;
             lowersDiv.appendChild(image);
-
+            
             image.addEventListener('click', () => {
                 const modal = document.getElementById('modal');
                 document.getElementById('modal-title').textContent = lower.title;
                 document.getElementById('modal-description').textContent = lower.description;
                 modal.style.display = 'block';
             });
-
+            
             const titleDiv = document.createElement('div');
             titleDiv.classList.add('title');
             const titleH3 = document.createElement('h3');
             titleH3.textContent = lower.title;
             titleDiv.appendChild(titleH3);
             lowersDiv.appendChild(titleDiv);
-
+            
             lowersDiv.addEventListener('click', () => {
                 const modal = document.getElementById('modal');
                 document.getElementById('modal-title').textContent = lower.title;
@@ -193,12 +196,12 @@ fetch('/data/kizuki.json')
     .catch(error => {
         console.error('Erro ao buscar dados dos 12 Kizuki:', error);
     });
-
+    
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('section');
     const headerHeight = document.querySelector('header').offsetHeight;
-
+    
     function removeActiveClasses() {
         navLinks.forEach(link => {
             link.classList.remove('active');
@@ -368,3 +371,18 @@ window.onload = function() {
         });
     };
 
+function toggleMenu() {
+    var nav = document.getElementById('mobile-nav');
+    var isMenuOpen = nav.style.display === 'grid'; 
+    nav.style.display = isMenuOpen ? 'none' : 'grid';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
+    
+    document.querySelectorAll('#mobile-nav a').forEach(function(menuItem) {
+        menuItem.addEventListener('click', function() {
+            document.getElementById('mobile-nav').style.display = 'none';
+        });
+    });
+});

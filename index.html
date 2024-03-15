@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Demon Slaying">
     <title>Demon Slaying</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=2">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=2" async>
     <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
@@ -13,9 +13,18 @@
     <main>
         <section class="first-section" id="first-section">
             <header>
-                <img src="img/logobranca.png" alt="Logo">
-                <nav>
-                    <ul>
+                <div class="menu-hamburguer" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="logo-header">
+                    <img src="img/logobranca.png" alt="">
+                </div>
+                
+                <nav id="mobile-nav" class="mobile-nav">
+                    <ul class="menu-group">
                         <li><a href="#respiration-section">Respirações</a></li>
                         <li><a href="#hashiras-section">Hashiras</a></li>
                         <li><a href="#kizuki-section">12 Kizuki</a></li>
@@ -61,7 +70,7 @@
             <hr>
             <div class="lower">
                 <div class="images" id="lower-container">
-            
+                    
                 </div>
             </div>
         </section>
@@ -69,11 +78,16 @@
         <section class="fifth-section" id="persons-section">
             <h2>Personagens</h2>
             <div id="carousel" class="carousel">
-                <div id="carousel-items" class="carousel-items"></div>
+                <div id="carousel-items" class="carousel-items">
+
+                </div>
             </div>
-            <div id="carousel-indicators"></div>
+            <div id="carousel-indicators" class="carousel-indicators">
+            </div>
             
-            <div id="person-description" class="person-description"></div>
+            <div id="person-description" class="person-description">
+
+            </div>
     
             <footer>
                 <h3>By @avelando</h3>
@@ -81,7 +95,7 @@
                     <a href="https://github.com/avelando">
                         <img src="img/footer/github.svg" alt="github">
                     </a>
-    
+                    
                     <a href="https://www.instagram.com/avelando/">
                         <img src="img/footer/instagram.svg" alt="instagram">
                     </a>
